@@ -1,24 +1,16 @@
-# README
+# Rails test application to post articles
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Current functionalities
+1. Browser all articles
+2. Read article in detail
+3. Create/Update/Delete article - Must be logged in
+4. Sign up as new user
+5. Login as existing user
+6. Logout
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Steps to run this app locally
+1. Requirements: Ruby, Sqlite3, Rails, Git
+2. Clone this repo and `cd rails-app`
+3. Run `bundle install --with development` to install required gems
+4. Run `rails server` to start the application
+5. Visit `localhost:300` on any browser
