@@ -21,6 +21,15 @@ hgroup p {
     margin: 0;
 }
 
+ul.horizontal-list {
+    list-style: none;
+    padding-left: 0;
+}
+ul.horizontal-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 section.main-flash-box {
     margin-top: 1em;    
 }
