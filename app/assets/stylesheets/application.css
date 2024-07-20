@@ -20,3 +20,17 @@ hgroup h1 {
 hgroup p {
     margin: 0;
 }
+
+section.main-flash-box {
+    margin-top: 1em;    
+}
+.flash {
+    width: fit-content;
+}
+.flash.alert {
+    /* border: 2px dotted red; */
+    color: red;
+}
+.flash.notice {
+    color: orange;
+}

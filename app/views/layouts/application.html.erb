@@ -23,6 +23,12 @@
       <% end %>
     </nav>
 
+    <section class="main-flash-box">
+        <% flash.each do |key, message| %>
+          <div class="flash <%= key %>"><%= message %></div>
+        <% end %>
+    </section>
+
     <%= yield %>
   </body>
 </html>
