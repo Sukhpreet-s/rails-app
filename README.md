@@ -12,5 +12,6 @@
 1. Requirements: Ruby, Sqlite3, Rails, Git
 2. Clone this repo and `cd rails-app`
 3. Run `bundle install --with development` to install required gems
-4. Run `rails server` to start the application
-5. Visit `localhost:300` on any browser
+4. Optional step! Run `rails db:seed` to run seed data. Note: Seed data can be modified in `db/seeds.rb` file.
+5. Run `rails server` to start the application
+6. Visit `localhost:300` on any browser
