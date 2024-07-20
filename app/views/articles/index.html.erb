@@ -1,0 +1,11 @@
+<p>The best reads ever!</p>
+
+<%= link_to "Write stuff", new_article_path %>
+
+<ul>
+    <% @articles.each do |article| %>
+        <li>
+            <%= link_to article.title, article %>
+        </li>
+    <% end %>
+</ul>

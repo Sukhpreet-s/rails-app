@@ -1,0 +1,16 @@
+<hgroup>
+    <h1><%= @article.title %></h1>
+    <p><em>by <%= @article.user.email %></em></p>
+</hgroup>
+
+<article><p><%= @article.body %></p></article>
+
+<div>
+    <%= link_to "Edit", edit_article_path(@article) %>
+</div>
+<div>
+    <%= link_to "Delete", @article, data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"
+    } %>
+</div>

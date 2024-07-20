@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <nav>
+      <li><%= link_to "Home", articles_path %></li>
+
+      <% if current_user %>
+        <li>Logged in as <u><%= current_user.email %></u></li>
+        <li><%= link_to "Log out", logout_path, data: {turbo_method: :delete} %></li>
+      <% else %>
+        <li><%= link_to "Sign up", new_user_path %></li>
+        <li><%= link_to "Log In", login_path %></li>
+      <% end %>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
